@@ -1,6 +1,4 @@
-//import * as React from 'react';
 import React from 'react';
-//import ReactDOM from 'react-dom';
 import { HashRouter as Router, Route } from 'react-router-dom';
 //import './App.css';
 
@@ -12,6 +10,9 @@ import tasks from './component/tasks/Index';
 import taskShow from './component/tasks/Show';
 import taskCreate from './component/tasks/Create';
 import taskEdit from './component/tasks/Edit';
+/* user */
+import userCreate from './component/user/Create';
+import userLogin from './component/login';
 //
 function App() {
   return (
@@ -26,6 +27,9 @@ function App() {
           <Route path='/task_create' component={taskCreate} />
           <Route path='/task_show/:id' component={taskShow} />
           <Route path='/task_edit/:id' component={taskEdit} />
+          {/* users */}
+          <Route path='/user_create' component={userCreate} />
+          <Route path='/login' component={userLogin} />
         </div>
       </Router>
     </div>
