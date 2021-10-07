@@ -13,6 +13,11 @@ import taskEdit from './component/tasks/Edit';
 /* user */
 import userCreate from './component/user/Create';
 import userLogin from './component/login';
+/* notes */
+import notes from './component/notes/Index';
+import noteShow from './component/notes/Show';
+import noteCreate from './component/notes/Create';
+import noteEdit from './component/notes/Edit';
 //
 function App() {
   return (
@@ -30,6 +35,11 @@ function App() {
           {/* users */}
           <Route path='/user_create' component={userCreate} />
           <Route path='/login' component={userLogin} />
+          {/* notes */}
+          <Route path='/notes' component={notes} />
+          <Route path='/note_create' component={noteCreate} />
+          <Route path='/note_show/:id' component={noteShow} />
+          <Route path='/note_edit/:id' component={noteEdit} />
         </div>
       </Router>
     </div>

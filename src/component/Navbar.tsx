@@ -8,10 +8,10 @@ class Navbar extends React.Component {
       <div>
         <div className="container">
           <Link to="/">[ Home ] </Link>
-          <Link to="/test" className="ml-2">[ Test ] </Link>
           <Link to="/tasks" className="ml-2">[ Task ] </Link>
+          <Link to="/notes" className="ml-2">[ Notes ] </Link>
         </div>
-        <hr />
+        <hr className="mb-0"/>
       </div>
     )
   }
